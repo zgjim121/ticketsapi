@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 class BaseTicketRequest extends FormRequest
 {
 
-    public function mappedAttributes()
+    public function mappedAttributes(): array
     {
         $attributeMap = [
             'data.attributes.title' => 'title',
