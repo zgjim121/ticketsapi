@@ -10,10 +10,16 @@ use App\Http\Requests\Api\V1\UpdateTicketRequest;
 use App\Http\Resources\V1\TicketResource;
 use App\Models\Ticket;
 use App\Models\User;
+use App\Policies\V1\TicketPolicy;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\Gate;
 
 class TicketController extends ApiController
 {
+
+    protected $policyClass = TicketPolicy::class;
+
     /**
      * Display a listing of the resource.
      */
@@ -35,7 +41,6 @@ class TicketController extends ApiController
                 'error' => 'The provided user id does not exist.'
             ]);
         }
-
 
 
         return new TicketResource($request->mappedAttributes());
@@ -68,6 +73,8 @@ class TicketController extends ApiController
         try {
             $ticket = Ticket::findOrFail($ticket_id);
 
+            Gate::authorize('update', $ticket);
+
             $request->mappedAttributes();
 
             $ticket->update($request->mappedAttributes());
@@ -75,6 +82,8 @@ class TicketController extends ApiController
             return new TicketResource($ticket);
         } catch (ModelNotFoundException) {
             return $this->error('Ticket Cannot Be Found', 404);
+        } catch (AuthorizationException) {
+            return $this->error('You are not authorized to update that resource', 401);
         }
     }
 
