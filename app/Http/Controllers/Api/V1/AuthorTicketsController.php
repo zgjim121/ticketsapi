@@ -41,7 +41,7 @@ class AuthorTicketsController extends ApiController
 
     public function replace(ReplaceTicketRequest $request, $author_id, $ticket_id)
     {
-        // PUT
+        // PATCH
         try {
             $ticket = Ticket::where('id', $ticket_id)
                 ->where('user_id', $author_id)
@@ -68,6 +68,7 @@ class AuthorTicketsController extends ApiController
                 ->firstOrFail();
 
             Gate::authorize('update', $ticket);
+
             $ticket->update($request->mappedAttributes());
             return new TicketResource($ticket);
         } catch (ModelNotFoundException) {

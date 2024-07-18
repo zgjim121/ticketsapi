@@ -27,7 +27,7 @@ abstract class QueryFilter
         return $this->builder;
     }
 
-    public function apply(Builder $builder)
+    public function apply(Builder $builder): Builder
     {
         $this->builder = $builder;
 
@@ -41,7 +41,7 @@ abstract class QueryFilter
         return $builder;
     }
 
-    protected function sort($value)
+    protected function sort($value): void
     {
         $sortAttributes = explode(',', $value);
 
