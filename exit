@@ -1,0 +1,95 @@
+[33mcommit fb5f5edc19e645d21630897ed9a468ea1719aab8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Zgjim Neziraj <=>
+Date:   Thu Jul 18 14:42:52 2024 +0200
+
+    Applying Granular Permissions
+
+[33mcommit 491d5d17bc708048761e81a91ed6cbf1fa3af03b[m
+Author: Zgjim Neziraj <=>
+Date:   Thu Jul 18 02:15:13 2024 +0200
+
+    Controlling Access with Token abilities
+
+[33mcommit 68cb1e4908cea3ea36f0f163403363751a5383e7[m
+Author: Zgjim Neziraj <=>
+Date:   Wed Jul 17 17:47:23 2024 +0200
+
+    Using Policies for User Authorization
+
+[33mcommit a055ef8e3b26e75dd9977870fbe25aad6b3eb04f[m
+Author: Zgjim Neziraj <=>
+Date:   Wed Jul 17 17:12:33 2024 +0200
+
+    trying to fix a bug on not displaying error message
+
+[33mcommit 33811b73518f1e0034ab45bdc8374bdbd53438c8[m
+Author: Zgjim Neziraj <=>
+Date:   Wed Jul 17 17:05:08 2024 +0200
+
+    update requests
+
+[33mcommit 9aa97b259a8694f973cbecd18a74f020512cdd92[m
+Author: Zgjim Neziraj <=>
+Date:   Mon Jul 15 03:59:13 2024 +0200
+
+    Replacing Resources with PUT requests
+
+[33mcommit b87b7e69f5422c5c17ff648703a5471b9975dc0f[m
+Author: Zgjim Neziraj <=>
+Date:   Mon Jul 15 03:10:45 2024 +0200
+
+    deleting resources with delete requests
+
+[33mcommit 22f0b7611b6e86321a52057e69a2f4103fb4cb8a[m
+Author: Zgjim Neziraj <=>
+Date:   Sat Jul 13 17:32:51 2024 +0200
+
+    Creating Resources with Post Requests
+
+[33mcommit 7d5d4001a061ffabf3542a9e816b8480d48e4e71[m
+Author: Zgjim Neziraj <=>
+Date:   Sat Jul 13 15:59:58 2024 +0200
+
+    Sorting Data
+
+[33mcommit e530148cdbe048cfe982586631eeae334c5ef776[m
+Author: Zgjim Neziraj <=>
+Date:   Sat Jul 13 15:40:43 2024 +0200
+
+    Using (and Filtering) Nested Resources
+
+[33mcommit 40507e7738032c410722756710753a81ea3dc89e[m
+Author: Zgjim Neziraj <=>
+Date:   Fri Jul 12 17:13:25 2024 +0200
+
+    Writing Filters
+
+[33mcommit 70b43457a1415397f1889aec9f27d326d16e4908[m
+Author: Zgjim Neziraj <=>
+Date:   Fri Jul 12 15:37:47 2024 +0200
+
+    Using Optional Parameters To Load Optional Data
+
+[33mcommit 4bfccb38f0f9456bd59bd2be11ff05e9aa6c9814[m
+Author: Zgjim Neziraj <=>
+Date:   Wed Jul 10 16:33:57 2024 +0200
+
+    Conditionally Omitting and Including Data
+
+[33mcommit 0dfba0327a9d1d1519812130f4dbd293fbdb5eae[m
+Author: Zgjim Neziraj <=>
+Date:   Wed Jul 10 16:01:03 2024 +0200
+
+    Designing Json Response
+
+[33mcommit 92e058f338f9ded055dd2a205aa0af2f82d6d804[m
+Author: Zgjim Neziraj <=>
+Date:   Wed Jul 10 15:49:29 2024 +0200
+
+    Authentication Tokens, Revoking Authentication Tokens, Authorization
+
+[33mcommit 6a6c8e0ef5fdf3690d52c26466f9f6ebafc16720[m
+Author: Zgjim Neziraj <=>
+Date:   Tue Jul 9 17:24:56 2024 +0200
+
+    first commit, versioning the api

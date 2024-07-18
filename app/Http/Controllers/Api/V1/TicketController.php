@@ -36,7 +36,7 @@ class TicketController extends ApiController
     {
         try {
             Gate::authorize('store', Ticket::class);
-            
+
             return new TicketResource(Ticket::create($request->mappedAttributes()));
         } catch (AuthorizationException) {
             return $this->error('You are not authorized to update that resource', 401);
