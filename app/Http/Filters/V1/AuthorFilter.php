@@ -2,8 +2,6 @@
 
 namespace App\Http\Filters\V1;
 
-use function Symfony\Component\Translation\t;
-
 class AuthorFilter extends QueryFilter
 {
     protected $sortable = [
